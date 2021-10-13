@@ -86,13 +86,15 @@ public class hilosprincipal {
 				h2.getState();
 				h3.getState();
 
-				System.out.println("\nDesea agregar m·s palabras? S/N ");
+				System.out.println("\nDesea agregar m√°s palabras? S/N ");
 				stloop = respuesta.nextLine();
 
 				try {
-					if (!(stloop.equals("S") || stloop.equals("s"))) {
+					if (!(stloop.equals("S") || stloop.equals("s") || stloop.equals("Y") || stloop.equals("y"))) {
 						bandera = false;
 						System.out.println("Finalizando programa");
+					}else{
+						bandera = true;
 					}
 				} catch (Exception e) {
 					System.out.println("Error al leer respuesta ");
@@ -141,15 +143,17 @@ public class hilosprincipal {
 					// Thread.sleep(1500);
 					// String st = new String(respuesta.nextLine());
 					// respuesta.nextLine();
-					System.out.println("Desea agregar m·s palabras? S/N ");
+					System.out.println("Desea agregar m√°s palabras? S/N ");
 					// Thread.sleep(1500);
 					stloop = respuesta.nextLine();
 					// stloop = "N";
 
 					try {
-						if (!(stloop.equals("S") || stloop.equals("s"))) {
+						if (!(stloop.equals("S") || stloop.equals("s") || stloop.equals("Y") || stloop.equals("y"))) {
 							bandera = false;
 							System.out.println("Finalizando programa");
+						}else{
+							bandera = true;
 						}
 					} catch (Exception e) {
 						System.out.println("Error al leer respuesta ");
